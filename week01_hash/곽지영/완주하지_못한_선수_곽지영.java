@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
-class Solution {
-    public String solution(String[] participant, String[] completion) {
+class 완주하지_못한_선수_곽지영 {
+    public static String solution(String[] participant, String[] completion) {
         HashMap<String, Integer> map = new HashMap<>();
 
         for (String name : completion) {
@@ -17,16 +17,12 @@ class Solution {
 
         return "";
     }
-}
 
-public class 완주하지_못한_선수_곽지영 {
     public static void main(String[] args) {
-        Solution solution = new Solution();
-
         String[] participant = {"leo", "kiki", "eden"};
         String[] completion = {"eden", "kiki"};
 
-        String answer = solution.solution(participant, completion);
+        String answer = solution(participant, completion);
 
         System.out.println(answer); // leo
     }
